@@ -1,0 +1,16 @@
+h1,
+h2,
+p {
+    text-align: center;
+}
+
+body {
+    /* commenting css */
+    /* background-color: burlywood; */
+}
+
+#menu {
+    width: 80%;
+    background-color: burlywood;
+    margin: auto;
+}
