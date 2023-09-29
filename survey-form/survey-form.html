@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles.css" />
+        <title>Survey Form</title>
+    </head>
+    <body>
+        <h1 id="title">Test</h1>
+        <p id="description">Test</p>
+        <form action="" id="survey-form">
+            <label for="name" id="name-label"
+                >Name
+                <input
+                    id="name"
+                    type="text"
+                    required
+                    placeholder="Enter your name"
+            /></label>
+            <label for="email" id="email-label"
+                >Email
+                <input
+                    type="email"
+                    id="email"
+                    required
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                    placeholder="Enter your email"
+            /></label>
+            <label for="number" id="number-label"
+                >Number
+                <input
+                    type="number"
+                    id="number"
+                    required
+                    min="10"
+                    max="13"
+                    placeholder="Enter your Number"
+            /></label>
+
+            <label for="dropdown"
+                >Where you know freecodecamp
+                <select id="dropdown" name="dropdown">
+                    <option value="">Prefer not to say</option>
+                    <option value="1">freeCodeCamp News</option>
+                    <option value="2">freeCodeCamp YouTube Channel</option>
+                </select>
+            </label>
+
+            <label for="personal-account"
+                ><input
+                    id="personal-account"
+                    type="radio"
+                    name="account-type"
+                    class="inline"
+                    value="personal account"
+                />
+                Personal Account</label
+            >
+            <label for="business-account"
+                ><input
+                    id="business-account"
+                    type="radio"
+                    name="account-type"
+                    class="inline"
+                    value="business account"
+                />
+                Business Account</label
+            >
+
+            <label for="terms-and-conditions">
+                <input
+                    id="terms-and-conditions"
+                    type="checkbox"
+                    required
+                    name="terms-and-conditions"
+                    class="inline"
+                    value="term conditions"
+                />
+                I accept the
+                <a href="https://www.freecodecamp.org/news/terms-of-service/"
+                    >terms and conditions</a
+                >
+            </label>
+            <label for="terms-and-conditions">
+                <input
+                    id="terms-and-conditions"
+                    type="checkbox"
+                    required
+                    name="terms-and-conditions"
+                    class="inline"
+                    value="term conditions"
+                />
+                I accept the
+                <a href="https://www.freecodecamp.org/news/terms-of-service/"
+                    >terms and conditions</a
+                >
+            </label>
+
+            <label for="bio"
+                >Provide a bio:
+                <textarea
+                    id="bio"
+                    name="bio"
+                    rows="3"
+                    cols="30"
+                    placeholder="I like coding on the beach..."
+                ></textarea>
+            </label>
+
+            <input type="submit" value="Submit" id="submit" />
+        </form>
+    </body>
+</html>
